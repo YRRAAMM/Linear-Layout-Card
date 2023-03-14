@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="117sp"
+    android:layout_margin="16sp"
+    android:background="@drawable/rounded_corners"
+    android:gravity="center"
+    android:padding="12sp"
+    app:circularflow_radiusInDP="12dp
+"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageView"
+        android:layout_width="93dp"
+        android:layout_height="93dp"
+        app:shapeAppearanceOverlay="@style/rounded_corner"
+        app:srcCompat="@drawable/image" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/dm_sans"
+                android:text="@string/name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_13_dim"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="38sp"
+                android:layout_height="match_parent"
+                android:background="@drawable/rounded_corners_red_card"
+                android:fontFamily="@font/dm_sans"
+                android:gravity="center"
+                android:text="@string/_3_hr"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                tools:ignore="TextContrastCheck" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp">
+
+            <TextView
+                android:layout_width="50sp"
+                android:layout_height="16sp"
+                android:layout_weight="1"
+                android:text="@string/job_title"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black_"
+                android:textSize="@dimen/sp_12_dim" />
+
+            <TextView
+                android:layout_width="44sp"
+                android:layout_height="16sp"
+                android:layout_weight="1"
+                android:fontFamily="@font/dm_sans"
+                android:gravity="end"
+                android:text="@string/Nationality"
+                android:textColor="@color/black_"
+                android:textSize="@dimen/sp_12_dim" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|end"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|start|left"
+                android:orientation="horizontal"
+                tools:ignore="RtlHardcoded,UseCompoundDrawables">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="12sp"
+                    android:layout_height="12sp"
+                    android:layout_marginEnd="4dp"
+                    android:contentDescription="@string/todo"
+                    app:srcCompat="@drawable/icon"
+                    tools:ignore="ImageContrastCheck" />
+
+                <TextView
+                    android:layout_width="17sp"
+                    android:layout_height="17sp"
+                    android:fontFamily="@font/dm_sans"
+                    android:text="@string/current_location"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/sp_13_dim"
+                    tools:ignore="TextContrastCheck" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="61sp"
+                android:layout_height="16sp"
+                android:layout_weight="1"
+                android:fontFamily="@font/dm_sans"
+                android:gravity="end"
+                android:text="@string/_5_days_ago"
+                android:textColor="@color/light_grey"
+                android:textSize="@dimen/sp_12_dim"
+                tools:ignore="TextContrastCheck" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:orientation="horizontal"
+            tools:ignore="RtlHardcoded">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/dm_sans"
+                android:text="@string/reviews"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_12_dim" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:fontFamily="@font/dm_sans"
+                android:text="@string/rattings"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_12_dim"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/todo"
+                app:srcCompat="@drawable/star_4"
+                tools:ignore="ImageContrastCheck" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
